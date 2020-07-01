@@ -6,14 +6,13 @@
 <script>
     function initJodit() {
         if(typeof Jodit != "undefined") {
-            console.log("Jodit loaded.");
+            console.log("Jodit is loaded.");
             var editor = new Jodit('#editor');
             editor.value = document.getElementById("textInDb").value;
         } else {
-            console.log("Jodit no loaded.");
-            setTimeout(initJodit, 1);
+            console.log("Jodit is not loaded yet.");
+            setTimeout(initJodit, 50);
         }
     }
     initJodit();
-
 </script>
