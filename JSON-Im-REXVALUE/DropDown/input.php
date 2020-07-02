@@ -8,8 +8,9 @@
     $value1 = rex_var::toArray("REX_VALUE[1]");
     $rex_value_1 = $value1[$rex_value_json_key];
 
-    echo '<label for="options">Options:</label>
-    <select name="REX_INPUT_VALUE[1]['.$rex_value_json_key.']" id="options">';
+    echo    '<div class="form-group">'.
+            '<label for="options">Options:</label>
+    <select class="form-control" name="REX_INPUT_VALUE[1]['.$rex_value_json_key.']" id="options">';
     foreach ($options as $key => $value) {
         $selected = '';
         if($value == $rex_value_1) {
@@ -17,5 +18,6 @@
         }
         echo '<option value="'.$value.'"'.$selected.'>'.$key.'</option>';
     }
-    echo '</select>';
+    echo '</select>'.
+        '</div>';
 ?>
