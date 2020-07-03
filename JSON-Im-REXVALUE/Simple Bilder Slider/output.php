@@ -23,7 +23,7 @@
 </style>
 
 
-<div class="slick-slider" style="height: 500px; width: 100%; display: block; overflow: hidden;"
+<div class="slick-slider-REX_SLICE_ID" style="height: 500px; width: 100%; display: block; overflow: hidden;"
      data-slick='{ "slidesToShow": 1, "slidesToScroll": 1, "arrows": true, "dots": true }'>
     <?php
     foreach (explode(',', "REX_MEDIALIST[id=1]") as $image) {
@@ -34,5 +34,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
-    $(".slick-slider").slick();
+    $(".slick-slider-REX_SLICE_ID").slick();
 </script>
