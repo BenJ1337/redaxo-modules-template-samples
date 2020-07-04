@@ -15,6 +15,7 @@
     }
     .slick-prev {
         left: 20px;
+        z-index: 1;
     }
     .slick-prev::before,
     .slick-next::before {
